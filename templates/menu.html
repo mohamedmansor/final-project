@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block body %}
+	
+<h1>{{ restaurant.name }}</h1>
+<form action="#" method="">
+	{% for i in items %}
+		<h1>{{ i.name }}</h1>
+		<p>{{ i.description }}</p>
+		<p>{{ i.price }}</p>
+		<p>{{ i.course }}</p>
+		</br>
+		<a href="#">Edit </a></br>
+		<a href="#">Delete </a>
+	{% endfor %}
+</form>
+{% endblock body %}
